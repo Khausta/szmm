@@ -84,6 +84,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: $second-color;
+    text-align: center;
 }
 
 .button {
@@ -152,4 +153,8 @@ body {
 @import 'blocks/production/media';
 @import 'blocks/license/license';
 @import 'blocks/license/media';
+@import 'blocks/task/task';
+@import 'blocks/task/media';
+@import 'blocks/partners/partners';
+@import 'blocks/partners/media';
 

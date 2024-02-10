@@ -15,8 +15,8 @@ const productsSwiper = new Swiper('.production__swiper', {
 
 const licenseSwiper = new Swiper('.license__swiper', {
   // loop: true,
-  centeredSlides: true,
-  centered: true,
+  // centeredSlides: true,
+  // centered: true,
   slidesPerView: 4,
   pagination: {
     el: '.license__pagination',

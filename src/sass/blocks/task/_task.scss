@@ -1,0 +1,92 @@
+.task {
+    
+
+    .title {
+        text-align: left;
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 40px 0;
+        
+        
+    }
+
+    &__form {
+        position: relative;
+        display: inline-block;
+        width: 585px;
+        min-height: 510px;
+        background: $first-bg-color;
+        padding: 45px 82px 45px 45px;
+        box-shadow: 7px 7px 16px 0 rgba(237, 237, 237, 0.45);
+        z-index: 1;
+    }
+
+    #document {
+        display: none;
+    }
+
+    label {
+        margin-bottom: 20px;
+        padding: 13px 40px 12px 40px;
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input, label {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: $main-color;
+    }
+
+    &__document {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+        color: $main-color;
+    }
+
+    &__contacts {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 100%;
+
+        &_small {
+            width: 224px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 13px 0 12px;
+    }
+
+    &__picture {
+        img {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+    }
+
+
+
+}
