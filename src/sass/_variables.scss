@@ -1,0 +1,13 @@
+$main-color: #1D1D1B;
+$second-color: #A1A8AA;
+
+$first-bg-color: #FFFFFF;
+$second-bg-color: #F8F8F8;
+
+@mixin flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
