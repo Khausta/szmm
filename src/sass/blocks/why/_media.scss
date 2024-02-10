@@ -1,0 +1,35 @@
+@media (max-width: 1140px) {
+    .why {
+        &__item {
+            width: clamp(320px, 30vw, 350px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .why {
+
+        &__items {
+            gap: 1vw;
+        }
+
+        &__item {
+           
+            width: clamp(140px, 44vw, 320px);
+        }
+
+        &__item-img {
+            margin-bottom: 1vw;
+            height: clamp(116px, 37vw, 300px);
+        }
+
+        &__title {
+            margin-bottom: 2vw;
+            font-size: clamp(14px, 4vw, 28px );
+        }
+
+        &__text {
+            font-size: clamp(10px, 3vw, 22px );
+        }
+    }
+}
