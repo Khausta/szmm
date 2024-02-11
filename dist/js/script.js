@@ -1,3 +1,16 @@
+const promoSwiper = new Swiper('.promo__swiper', {
+  // loop: true,
+  // centeredSlides: true,
+  // centered: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.promo__pagination',
+    clickable: true
+  },
+
+});
+
+
 const productsSwiper = new Swiper('.production__swiper', {
   // loop: true,
   centeredSlides: true,

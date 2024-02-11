@@ -1,0 +1,36 @@
+.promo {
+    position: relative;
+    width: 100%;
+    // min-height: 700px;
+    overflow: hidden;
+
+    
+    &__img {
+        position: relative;
+        width: 100%;
+        height: clamp(600px, 37vw, 700px);
+        overflow: hidden;
+        img {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__title {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 286px;
+        font-weight: 700;
+        font-size: 50px;
+        color: $main-color;
+        z-index: 4;
+        text-align: center;
+    }
+
+  
+    
+}
