@@ -1,9 +1,40 @@
 .footer {
+    padding: 25px 0 ;
+    background: $second-bg-color;
     
     a::before {
+        margin-right: 5px;
         border: 1px solid black;
         border-radius: 100%;
-        padding: 0.5rem;
+        padding: 0.4rem;
         color: $main-color;
     }
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: $main-color;
+    }
+
+    &__social {
+        
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    
 }

@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .map {
+        &__contacts {
+            gap: 0px;
+            justify-content: space-between;
+        }
+
+        &__contact {
+            width: clamp(140px, 40vw, 320px);
+            // height: clamp(116px, 37vw, 300px);
+        
+        }
+
+        &__frame {
+            height: clamp(280px, 81vw, 550px);
+        }
+
+        &__info-title {
+            margin-bottom: 1vw;
+            font-size: clamp(14px, 4vw, 22px);
+        }
+
+        &__info {
+            font-size: clamp(12px, 3.4vw, 46px);
+        }
+
+        i {
+            display: block;
+            margin-bottom: 6vw;
+        }
+
+        i::before {
+            font-size: clamp(14px, 4vw, 24px);
+            
+        }
+
+    }
+}

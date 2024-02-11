@@ -4,7 +4,8 @@
         margin-bottom: 30px;
         display: flex;
         gap: 165px;
-        justify-content: center;    
+        justify-content: center;  
+        flex-wrap: wrap;  
     }
 
     &__contact {
@@ -21,8 +22,10 @@
     }
 
     &__frame {
-        width: 1140px;
+        max-width: 1140px;
         height: 500px;
+        width: 100%;
+        background: $second-bg-color;
     }
 
 }

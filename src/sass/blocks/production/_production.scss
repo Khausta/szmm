@@ -12,24 +12,6 @@
         margin-bottom: 28px;
     }
 
-    
-    // .swiper-pagination-bullet {
-    //     background: none;
-    //     border: 1px solid $second-color;
-    // }
-
-    // .swiper-pagination-bullet-active {
-    //     width: 20px;
-    //     height: 8px;
-    //     border-radius: 100px;
-    //     background: $main-color;
-    //     border: 1px solid $second-color;
-    // }
-
-    // .swiper-pagination {
-    //     position: relative;
-    // }
-
     &__arrow-prev {
         position: absolute;
         top: 50%;
@@ -115,6 +97,7 @@
 
     .row-value {
         font-weight: 600;
+        text-decoration: none;
     }
 
     &__price {

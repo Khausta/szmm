@@ -1,0 +1,40 @@
+@media (max-width: 1140px) {
+    .footer {
+        .container {
+            position: relative;
+            width: 90%;
+        }
+        &__items {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3vw;
+        }
+
+        &__links {
+            margin-left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6vw;
+        }
+
+        &__link {
+            font-size: clamp(14px, 3.8vw, 50px);
+        }
+
+        &__logo {
+            width: 43vw;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__social {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

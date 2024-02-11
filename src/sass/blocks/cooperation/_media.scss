@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
     .cooperation {
+        padding: 8vw 0;
         &__item-img {
             width: clamp(140px, 44vw, 320px);
             height: clamp(116px, 37vw, 300px);
