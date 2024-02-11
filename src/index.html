@@ -10,6 +10,7 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/icons-font.css">
     <link rel="stylesheet" href="css/styles.css">
    
 </head>
@@ -387,12 +388,12 @@
                                 </p>
                                 <p class="task__text">Если есть вопросы и хотите что-то запросить</p>
                                 <div class="task__contacts">
-                                    <input class="task__input"  type="text" name="" id="">
-                                    <input class="task__input task__input_small"  type="text" name="" id="">
-                                    <input class="task__input task__input_small"  type="text" name="" id="">
-                                    <input class="task__input"  type="text" name="" id="">
+                                    <input class="task__input"  type="text" name="" id="" placeholder="Ваше имя">
+                                    <input class="task__input task__input_small"  type="text" name="" id="" placeholder="+7 (___) ___-__-__">
+                                    <input class="task__input task__input_small"  type="text" name="" id="" placeholder="Email">
+                                    <input class="task__input"  type="text" name="" id="" placeholder="Организация">
                                 </div>
-                                <button class="button task__button" type="submit">Отправить техническое задание</button>
+                                <button class="button task__button" type="submit" disabled>Отправить техническое задание</button>
                                 
                             </form>
                         </div>
@@ -431,19 +432,190 @@
                 </div>
             </section>
             <section class="feedback">
+                <div class="container">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__item">
+                            <h2 class="title title_with-subtitle">
+                                Остались вопросы?   
+                            </h2>
+                            <h3 class="subtitle">
+                                Мессенджеры всегда онлайн
+                            </h3>
+                            <a class="social" href="http://">
+                                <img src="img/telegram.png" alt="telegram icon">
+                            </a>
+                            <a class="social" href="http://">
+                                <img src="img/whatsapp.png" alt="whatsapp icon">
+                            </a>
+                            <h3 class="subtitle">
+                                Либо
+                            </h3>
+                            <input class="feedback__input"   type="text" name="" id="" placeholder="+7 (___) ___-__-__">
+                            <button class="button feedback__button">Отправить</button>
+                            <p class="feedback__text">
+                                Я даю свое согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006., согласно Политике Компании в области защиты персональных данных.
+                            </p>
+                        </div>
+                        <div class="feedback__item">
+                            <h2 class="title title_with-subtitle">
+                                Адрес  
+                            </h2>
+                            <p class="feedback__info-title _icon-navigate">
+                                Юридический адрес:
+                            </p>
+                            <p class="feedback__info">
+                                620014 г. Екатеринбург, ул. Сакко и Ванцетти 57А кв. 19
+                            </p>
+                            <p class="feedback__info-title _icon-person">
+                                Офис для работы с клиентами:
+                            </p>
+                            <p class="feedback__info">
+                                620014 г. Екатеринбург, ул. Чернышевского 16 оф 517
+                            </p>
+                            <p class="feedback__info-title _icon-clock">
+                                График работы:
+                            </p>
+                            <p class="feedback__info">
+                                Пн - Пт с 10.00 до 17.00
+                            </p>
+                            <p class="feedback__info-title _icon-call">
+                                Телефон:
+                            </p>
+                            <div class="feedback__phone">
+                                <p class="feedback__info">
+                                    +7 (999) 123-45-67 
+                                </p>
+                                <p class="feedback__info">
+                                    +7 (999) 123-45-67 
+                                </p>
+                            </div>
+                            <p class="feedback__info-title _icon-mail">
+                                Электронная почта:
+                            </p>
+                            <p class="feedback__info">
+                                landing@gmail.com
+                            </p>
 
+                        </div>
+
+
+
+                    </div>
+                </div>
             </section>
             <section class="cooperation">
-
+                <div class="container">
+                    <h2 class="title title_with-subtitle">
+                        Приглашаем к сотрудничеству  
+                    </h2>
+                    <h3 class="subtitle">
+                        Закупаем сырье в любом объеме и формате
+                    </h3>
+                    <div class="cooperation__wrapper">
+                        <div class="cooperation__item">
+                            <div class="cooperation__item-img">
+                                <img src="img/cooperation-img.png" alt="picture">
+                            </div>
+                            <div class="cooperation__title why__title">
+                                Ферроникель
+                            </div>
+                        </div>
+                        <div class="cooperation__item">
+                            <div class="cooperation__item-img">
+                                <img src="img/cooperation-img.png" alt="picture">
+                            </div>
+                            <div class="cooperation__title why__title">
+                                Ферроникель
+                            </div>
+                        </div>
+                        <div class="cooperation__item">
+                            <div class="cooperation__item-img">
+                                <img src="img/cooperation-img.png" alt="picture">
+                            </div>
+                            <div class="cooperation__title why__title">
+                                Ферроникель
+                            </div>
+                        </div>
+                        <div class="cooperation__item">
+                            <div class="cooperation__item-img">
+                                <img src="img/cooperation-img.png" alt="picture">
+                            </div>
+                            <div class="cooperation__title why__title">
+                                Ферроникель
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <form class="cooperation__form">
+                        <select name="offer" id="offer">
+                            <option value="">Предложить сырье</option>
+                            <option value="value01">value01</option>
+                            <option value="value02">value02</option>
+                            <option value="value03">value03</option>
+                            <option value="value04">value04</option>
+                        </select>
+                        <input class="cooperation__input"  type="text" name="" id="" placeholder="Ваше имя">
+                        <input class="cooperation__input task__input_small"  type="text" name="" id="" placeholder="+7 (___) ___-__-__">
+                        <button class="button cooperation__button">Сделать предложение</button>
+                    </form>
+                    <p class="feedback__text cooperation__text">
+                        Я даю свое согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006., согласно Политике Компании в области защиты персональных данных.
+                    </p>
+                </div>
             </section>
             <section class="map">
+                <div class="container">
+                    <div class="map__contacts">
+                        <div class="map__contact">
+                            <i class="_icon-navigate"></i>
+                            <p class="feedback__info-title map__info-title">Адрес:</p>
+                            <p class="feedback__info map__info">Москва, ул. Ленина, д. 12а, стр. 2</p>
+                        </div>
+                        <div class="map__contact">
+                            <i class="_icon-call"></i>
+                            <p class="feedback__info-title map__info-title">Телефон:</p>
+                            <p class="feedback__info map__info">+7 (999) 123-45-67</p>
+                        </div>
+                        <div class="map__contact">
+                            <i class="_icon-mail"></i>
+                            <p class="feedback__info-title map__info-title">Почта:</p>
+                            <p class="feedback__info map__info">Pochta@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="map__frame">
 
+                    </div>
+                </div>
             </section>
-            <section class="footer"></section>
+            <section class="footer">
+                <div class="container-big">
+                    <div class="footer__items">
+                        <a class="footer__logo" href="#">
+                            <img src="img/logo.svg" alt="Company's logotype">
+                        </a>
+                        <div class="footer__info">
+                            <a class="_icon-mail" href="#">
+                                landing@gmail.com
+                            </a>
+
+                            <a class="_icon-call" href="#">
+                                +7 999 123 45 67
+                            </a>
+                            <a class="social" href="http://">
+                                <img src="img/telegram.png" alt="telegram icon">
+                            </a>
+                            <a class="social" href="http://">
+                                <img src="img/whatsapp.png" alt="whatsapp icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
    
     </div>
+    <script src="https://kit.fontawesome.com/759cdd8e4f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

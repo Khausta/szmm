@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .cooperation {
+        &__item-img {
+            width: clamp(140px, 44vw, 320px);
+            height: clamp(116px, 37vw, 300px);
+        }
+
+        &__wrapper {
+            margin-bottom: 6vw;
+        }
+
+        hr {
+            margin-bottom: 8vw;
+            width: 58vw;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+}

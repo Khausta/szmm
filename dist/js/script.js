@@ -14,10 +14,6 @@ const productsSwiper = new Swiper('.production__swiper', {
 });
 
 const licenseSwiper = new Swiper('.license__swiper', {
-  // loop: true,
-  // centeredSlides: true,
-  // centered: true,
-  slidesPerView: 4,
   pagination: {
     el: '.license__pagination',
     clickable: true
@@ -26,4 +22,16 @@ const licenseSwiper = new Swiper('.license__swiper', {
     nextEl: '.license__arrow-next',
     prevEl: '.license__arrow-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
 });

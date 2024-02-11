@@ -2,6 +2,7 @@
     
 
     .title {
+        margin-bottom: 26px;
         text-align: left;
     }
 
@@ -30,22 +31,37 @@
     }
 
     label {
-        margin-bottom: 20px;
         padding: 13px 40px 12px 40px;
         border: 1px solid $main-color;
         border-radius: 4px;
         cursor: pointer;
-    }
-
-    input, label {
         font-weight: 500;
         font-size: 14px;
         text-align: center;
         color: $main-color;
     }
 
+    // input {
+    //     padding-left: 20px;
+    //     border: 1px solid $second-color;
+    //     border-radius: 4px;
+    //     height: 45px;
+    //     font-weight: 500;
+    //     font-size: 16px;
+    //     text-align: center;
+    //     color: $main-color;
+    //     text-align: left;
+    // }
+
+    // input::placeholder {
+    //     font-size: 14px;
+    //     text-align: center;
+    //     color: $second-color;
+    //     text-align: left;
+    // };
+
     &__document {
-        margin-bottom: 20px;
+        margin-bottom: 33px;
     }
 
     &__text {
@@ -70,11 +86,23 @@
         &_small {
             width: 224px;
         }
+
+        
+    }
+
+    &__input._error {
+        border-color: red;
     }
 
     &__button {
         width: 100%;
         padding: 13px 0 12px;
+        font-size: 14px;
+    }
+
+    &__button:disabled {
+        opacity: .7;
+        color: grey;
     }
 
     &__picture {

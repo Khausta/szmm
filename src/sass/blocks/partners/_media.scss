@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .partners {
+        padding: 11vw 0;
+
+        &__items {
+            justify-content: start;
+            gap: clamp(8px, 2vw, 40px);
+          
+        }
+
+        &__item {
+            padding: clamp(10px, 2vw, 20px);
+            width: clamp(140px, 43vw, 325px);
+            height: clamp(70px, 27vw, 195px);
+
+        }
+    }
+}

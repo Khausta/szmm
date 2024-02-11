@@ -10,6 +10,7 @@
 
 @media (max-width: 768px) {
     .production {
+        padding: 10vw 0;
         font-size: clamp(12px, 3.8vw, 46px);
 
         &__arrow-next, &__arrow-prev {

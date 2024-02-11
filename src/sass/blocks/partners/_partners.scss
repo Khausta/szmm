@@ -3,8 +3,9 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         gap: 45px;
+        flex-wrap: wrap;
     }
 
     &__item {

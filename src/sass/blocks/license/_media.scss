@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .license {
+        padding: 10vw 0;
+
+        &__swiper {
+            margin-bottom: 5vw;
+        }
+
+        &__arrow-prev, &__arrow-next{
+            width: clamp(30px, 9vw ,50px);
+            
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+}

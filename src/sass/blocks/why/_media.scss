@@ -1,7 +1,7 @@
-@media (max-width: 1140px) {
+@media (max-width: 1360px) {
     .why {
         &__item {
-            width: clamp(320px, 30vw, 350px);
+            width: clamp(320px, 46vw, 400px);
         }
     }
 }

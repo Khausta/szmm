@@ -1,0 +1,9 @@
+.footer {
+    
+    a::before {
+        border: 1px solid black;
+        border-radius: 100%;
+        padding: 0.5rem;
+        color: $main-color;
+    }
+}

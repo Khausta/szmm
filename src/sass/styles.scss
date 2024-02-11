@@ -11,6 +11,7 @@
 h1, h2, h3, li, p {
     padding: 0;
     margin: 0;
+    cursor:default;
 }
 
 hr {
@@ -73,6 +74,7 @@ body {
     font-size: 32px;
     color: $main-color;
     text-align: center;
+    cursor:default;
 
     &_with-subtitle {
         margin-bottom: 10px;
@@ -119,15 +121,40 @@ body {
     }
 }
 
+input, select {
+    padding-left: 20px;
+    border: 1px solid $second-color;
+    border-radius: 4px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-align: left;
+}
+
+input {
+    color: $main-color;
+}
+
+select {
+    color: $second-color;
+}
+input::placeholder {
+    font-size: 14px;
+    text-align: center;
+    color: $second-color;
+    text-align: left;
+};
+
 @media (max-width: 1360px) {
     .container {
-        max-width: 900px;
+        max-width: 1140px;
     }
 }
 
 @media (max-width: 1140px) {
     .container {
-        max-width: 700px;
+        max-width: 800px;
     }
 }
 
@@ -140,6 +167,15 @@ body {
     .title {
         margin-bottom: clamp(25px, 5vw, 42px);
         font-size: clamp(22px, 6vw, 44px);
+
+        &_with-subtitle {
+            margin-bottom: 1vw;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: clamp(25px, 5vw, 42px);
+        font-size: clamp(12px, 4vw, 25px);
     }
 
   
@@ -157,4 +193,12 @@ body {
 @import 'blocks/task/media';
 @import 'blocks/partners/partners';
 @import 'blocks/partners/media';
+@import 'blocks/feedback/feedback';
+@import 'blocks/feedback/media';
+@import 'blocks/cooperation/cooperation';
+@import 'blocks/cooperation/media';
+@import 'blocks/map/map';
+@import 'blocks/map/media';
+@import 'blocks/footer/footer';
+@import 'blocks/footer/media';
 
