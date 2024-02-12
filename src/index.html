@@ -23,13 +23,13 @@
                 </a>
                 <ul class="menu ">
                     <li>
-                        <a class=" contact-link" href="#">
+                        <a class=" contact-link" href="mailto:landing@gmail.com" target="_blank">
                             <i class="_icon-mail"></i>
                             <span>landing@gmail.com</span> 
                         </a>
                     </li>
                     <li>
-                        <a class=" contact-link" href="#">
+                        <a class=" contact-link" href="tel:+79991234567" target="_blank">
                             <i class="_icon-call"></i>
                             <span>
                                 +7 999 123 45 67
@@ -38,12 +38,12 @@
                     </li>
                     <ul class="social-links">
                         <li>
-                            <a class="social-link" href="http://">
+                            <a class="social-link" href="#" target="_blank">
                                 <img src="img/telegram.svg" alt="telegram icon">
                             </a>
                         </li>
                         <li>
-                            <a class="social-link" href="http://">
+                            <a class="social-link" href="#" target="_blank">
                                 <img src="img/whatsapp.svg" alt="whatsapp icon">
                             </a>
                             
@@ -461,19 +461,19 @@
                             <h2 class="title">
                                 Пришлите тех задание или спецификацию
                             </h2>
-                            <form action="">  
+                            <form action="#" class="js-task-form" novalidate>  
                                 <p class="task__document">
-                                    <label for="document">Загрузить файл</label>
-                                    <input placeholder="Загрузите файл" type="file" id="document" name="document" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"  required/>
+                                    <label class="doc-label" for="document">Загрузить файл</label>
+                                    <input class="input js-input" type="file" id="document" name="document" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"  />
                                 </p>
                                 <p class="task__text">Если есть вопросы и хотите что-то запросить</p>
                                 <div class="task__contacts">
-                                    <input class="task__input"  type="text" name="" id="" placeholder="Ваше имя">
-                                    <input class="task__input task__input_small"  type="text" name="" id="" placeholder="+7 (___) ___-__-__">
-                                    <input class="task__input task__input_small"  type="text" name="" id="" placeholder="Email">
-                                    <input class="task__input"  type="text" name="" id="" placeholder="Организация">
+                                    <input class="input task__input js-input"  type="text" name="user-name" id="user-name" placeholder="Ваше имя">
+                                    <input class="input task__input task__input_small task__phone js-input js-input-phone"  type="text" name="phone" id="" placeholder="+7 (___) ___-__-__" required>
+                                    <input class="input task__input task__input_small js-input js-input-email"  type="text" name="email" id="email" placeholder="Email" required>
+                                    <input class="input task__input js-input"  type="text" name="company" id="company" placeholder="Организация">
                                 </div>
-                                <button class="button task__button" type="submit" disabled>Отправить техническое задание</button>
+                                <button class="button task__button js-button" type="submit" >Отправить техническое задание</button>
                                 
                             </form>
                         </div>
@@ -521,17 +521,19 @@
                             <h3 class="subtitle">
                                 Мессенджеры всегда онлайн
                             </h3>
-                            <a class="social" href="http://">
+                            <a class="social" href="#" target="_blank">
                                 <img src="img/telegram.svg" alt="telegram icon">
                             </a>
-                            <a class="social" href="http://">
+                            <a class="social" href="#" target="_blank">
                                 <img src="img/whatsapp.svg" alt="whatsapp icon">
                             </a>
                             <h3 class="subtitle">
                                 Либо
                             </h3>
-                            <input class="feedback__input"   type="text" name="" id="" placeholder="+7 (___) ___-__-__">
-                            <button class="button feedback__button">Отправить</button>
+                            <form action="#" class="js-feedback-form" novalidate>
+                                <input class="input feedback__phone feedback__input js-input-phone"   type="text" name="" id="" placeholder="+7 (___) ___-__-__">
+                                <button class="button feedback__button" type="submit">Отправить</button>
+                            </form>
                             <p class="feedback__text">
                                 Я даю свое согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006., согласно Политике Компании в области защиты персональных данных.
                             </p>
@@ -626,17 +628,17 @@
                         </div>
                     </div>
                     <hr>
-                    <form class="cooperation__form">
-                        <select name="offer" id="offer">
+                    <form class="cooperation__form js-cooperation-form" action="#" novalidate>
+                        <select class="input js-input" name="offer" id="offer">
                             <option value="">Предложить сырье</option>
                             <option value="value01">value01</option>
                             <option value="value02">value02</option>
                             <option value="value03">value03</option>
                             <option value="value04">value04</option>
                         </select>
-                        <input class="cooperation__input"  type="text" name="" id="" placeholder="Ваше имя">
-                        <input class="cooperation__input task__input_small"  type="text" name="" id="" placeholder="+7 (___) ___-__-__">
-                        <button class="button cooperation__button">Сделать предложение</button>
+                        <input class="input cooperation__input js-input"  type="text" name="user-name" id="user-name" placeholder="Ваше имя">
+                        <input class="input cooperation__input task__input_small cooperation__phone js-input js-input-phone"  type="text" name="phone" id="" placeholder="+7 (___) ___-__-__" required pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                        <button class="button cooperation__button" type="submit">Сделать предложение</button>
                     </form>
                     <p class="feedback__text cooperation__text">
                         Я даю свое согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006., согласно Политике Компании в области защиты персональных данных.
@@ -674,18 +676,18 @@
                             <img src="img/logo.svg" alt="Company's logotype">
                         </a>
                         <div class="footer__links">
-                            <a class="_icon-mail footer__link" href="#">
+                            <a class="_icon-mail footer__link" href="mailto:landing@gmail.com" target="_blank">
                                 landing@gmail.com
                             </a>
 
-                            <a class="_icon-call footer__link" href="#">
+                            <a class="_icon-call footer__link" href="tel:+79991234567" target="_blank">
                                 +7 999 123 45 67
                             </a>
                             <div class="footer__social">
-                                <a class="social" href="http://">
+                                <a class="social" href="#">
                                     <img src="img/telegram.svg" alt="telegram icon">
                                 </a>
-                                <a class="social" href="http://">
+                                <a class="social" href="#">
                                     <img src="img/whatsapp.svg" alt="whatsapp icon">
                                 </a>
                             </div>
@@ -697,6 +699,7 @@
         </main>
    
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://kit.fontawesome.com/759cdd8e4f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=2f8c132a-b18e-4e5b-ac52-85ee44906872&lang=ru_RU"></script>  
