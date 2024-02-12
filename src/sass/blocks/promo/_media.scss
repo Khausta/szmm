@@ -1,12 +1,11 @@
 @media (max-width: 768px) {
     .promo {
         &__img {
-            height: clamp(480px, 37vw, 700px);
+            height: clamp(480px, 151vw, 1166px);
         }
 
         &__title {
-            top: 50vw;
-            font-size: clamp(24px, 4vw, 50px);
+            font-size: clamp(24px, 6vw, 50px);
         }
     }
 }

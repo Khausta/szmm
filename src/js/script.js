@@ -1,7 +1,6 @@
 const promoSwiper = new Swiper('.promo__swiper', {
-  // loop: true,
-  // centeredSlides: true,
-  // centered: true,
+  loop: true,
+  autoplay: true,
   slidesPerView: 1,
   pagination: {
     el: '.promo__pagination',
@@ -48,3 +47,17 @@ const licenseSwiper = new Swiper('.license__swiper', {
     }
   }
 });
+
+
+
+
+function init () {
+  let map = new ymaps.Map("YMapsID", {
+      center: [55.601141569145035,37.170822499999936],
+      zoom: 16
+  });
+}
+
+ymaps.ready(init);
+
+

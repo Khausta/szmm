@@ -9,16 +9,29 @@
     }
 
     &__contact {
+        max-width: 131px;
         text-align: center;
+    }
+
+    i {
+        display: block;
+        margin-bottom: 32px;
+        font-size: 18px;
     }
 
     i::before {
         margin: 0;
-        color:black
+        color:black;
+        font-size: 18px;
     }
 
     &__info-title {
         margin-left: 0;
+        font-size: 18px;
+    }
+
+    &__info {
+        font-size: 14px;
     }
 
     &__frame {

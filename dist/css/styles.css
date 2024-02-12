@@ -271,23 +271,24 @@ input::placeholder {
 .promo__title {
   position: absolute;
   width: 100%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  top: 286px;
+  transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 50px;
   color: #1D1D1B;
   z-index: 4;
   text-align: center;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 768px) {
   .promo__img {
-    height: clamp(480px, 37vw, 700px);
+    height: clamp(480px, 151vw, 1166px);
   }
   .promo__title {
-    top: 50vw;
-    font-size: clamp(24px, 4vw, 50px);
+    font-size: clamp(24px, 6vw, 50px);
   }
 }
 .why {
@@ -1017,14 +1018,25 @@ input::placeholder {
   flex-wrap: wrap;
 }
 .map__contact {
+  max-width: 131px;
   text-align: center;
+}
+.map i {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 18px;
 }
 .map i::before {
   margin: 0;
   color: black;
+  font-size: 18px;
 }
 .map__info-title {
   margin-left: 0;
+  font-size: 18px;
+}
+.map__info {
+  font-size: 14px;
 }
 .map__frame {
   max-width: 1140px;
@@ -1035,11 +1047,14 @@ input::placeholder {
 
 @media (max-width: 768px) {
   .map__contacts {
-    gap: 0px;
+    row-gap: 1vw;
+    -moz-column-gap: 0;
+         column-gap: 0;
     justify-content: space-between;
   }
   .map__contact {
     width: clamp(140px, 40vw, 320px);
+    max-width: 320px;
   }
   .map__frame {
     height: clamp(280px, 81vw, 550px);

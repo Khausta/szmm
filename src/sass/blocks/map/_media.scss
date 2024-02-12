@@ -1,12 +1,14 @@
 @media (max-width: 768px) {
     .map {
         &__contacts {
-            gap: 0px;
+            row-gap: 1vw;
+            column-gap: 0;
             justify-content: space-between;
         }
 
         &__contact {
             width: clamp(140px, 40vw, 320px);
+            max-width: 320px;
             // height: clamp(116px, 37vw, 300px);
         
         }
@@ -33,6 +35,10 @@
             font-size: clamp(14px, 4vw, 24px);
             
         }
+
+        // &__frame {
+        //     height: clamp(280px, 74vw, 500px);
+        // }
 
     }
 }
