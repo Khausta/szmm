@@ -633,7 +633,7 @@ input::placeholder {
     margin-bottom: 5vw;
   }
   .production .row-name {
-    max-width: 64vw;
+    max-width: 63vw;
   }
   .production .row-name, .production .row-value {
     font-size: clamp(12px, 3.8vw, 46px);
