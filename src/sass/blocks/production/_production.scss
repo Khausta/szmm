@@ -84,8 +84,10 @@
         padding-bottom: 16px;
         display: table-cell;
 
-        span {
+        a {
+            text-decoration: none;
             color: $main-color !important;
+            pointer-events: none;
         }
     }
     

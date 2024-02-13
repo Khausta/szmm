@@ -556,8 +556,10 @@ input::placeholder {
   padding-bottom: 16px;
   display: table-cell;
 }
-.production .cell span {
+.production .cell a {
+  text-decoration: none;
   color: #1D1D1B !important;
+  pointer-events: none;
 }
 .production .row-name {
   white-space: nowrap;
@@ -633,7 +635,7 @@ input::placeholder {
     margin-bottom: 5vw;
   }
   .production .row-name {
-    max-width: 63vw;
+    max-width: 64vw;
   }
   .production .row-name, .production .row-value {
     font-size: clamp(12px, 3.8vw, 46px);
