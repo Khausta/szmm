@@ -83,6 +83,10 @@
     .cell {
         padding-bottom: 16px;
         display: table-cell;
+
+        span {
+            color: $main-color !important;
+        }
     }
     
     .row-name {

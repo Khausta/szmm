@@ -26,6 +26,8 @@
         }
     }
 
+    
+
     &__phone {
         margin: auto;
     }
@@ -63,11 +65,39 @@
         margin-bottom: 16px;
         font-weight: 400;
         font-size: 14px;
-        color: $main-color;
+        color: $main-color !important;
     }
 
     &__phone {
         display: flex;
         gap: 28px;
     }
+
+    &__social {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 166%;
+            object-position: center;
+        }
+
+        &_telegram {
+                margin-right: 3px;
+            
+        
+            }
+            &_whatsapp {
+               margin-left: 3px;
+           }
+        
+
+    }
+
+ 
 }

@@ -2,13 +2,6 @@
     padding: 25px 0 ;
     background: $second-bg-color;
     
-    a::before {
-        margin-right: 5px;
-        border: 1px solid black;
-        border-radius: 100%;
-        padding: 0.4rem;
-        color: $main-color;
-    }
 
     &__items {
         display: flex;
@@ -25,16 +18,18 @@
     &__link {
         font-size: 18px;
         color: $main-color;
-    }
-
-    &__social {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
         
-
-        img {
-            width: 32px;
-            height: 32px;
+        &::before {
+            margin: 0;
+            border: 1px solid black;
+            border-radius: 100%;
+            padding: 0.4rem;
+            color: $main-color;
         }
     }
-
     
 }
