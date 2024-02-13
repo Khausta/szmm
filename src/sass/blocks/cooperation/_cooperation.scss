@@ -9,6 +9,13 @@
         // gap: 30px;
     }
 
+    &__item {
+        transition: scale .3s ease-in-out;
+        &:hover {
+                  scale: 1.05;
+              }
+    }
+
     &__item-img {
         display: flex;
         width: 263px;

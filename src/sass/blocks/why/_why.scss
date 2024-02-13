@@ -12,6 +12,11 @@
     &__item {
         max-width: 360px;
         text-align: left;
+        transition: scale .3s ease-in-out;
+
+        &:hover {
+            scale: 1.05;
+        }
     }
 
     &__item-img {

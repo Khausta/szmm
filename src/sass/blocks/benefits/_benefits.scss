@@ -4,7 +4,6 @@
 
     &__items {
         margin-bottom: 30px;
-        // @include flex-container;
         display: flex;
         justify-content: left;
         flex-wrap: wrap;
@@ -12,8 +11,12 @@
     }
 
     &__item {
-   
         max-width: 262px;
+        transition: scale .3s ease-in-out;
+
+        &:hover {
+            scale: 1.05;
+        }
     }
 
     &__icon-round {
