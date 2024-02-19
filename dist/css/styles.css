@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, li, p {
+h1, h2, h3, h4, li, p {
   padding: 0;
   margin: 0;
   cursor: default;
@@ -244,6 +244,48 @@ input::placeholder {
 
 .js-error {
   border: 1px solid red;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(192, 193, 193, 0.5);
+  top: 0;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay._active {
+  display: flex;
+}
+
+.popup {
+  padding: 30px;
+  max-width: 360px;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popup__title {
+  padding: 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.popup__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #1D1D1B;
+}
+.popup__button {
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
 @media (max-width: 1360px) {
