@@ -150,11 +150,13 @@ const productionButtons = document.querySelectorAll('.production__button');
 [benefitsButton, ...productionButtons].forEach(button => {
   button.addEventListener('click', () => {
     popup.classList.add('_active');
+    document.querySelector('body').style.overflow = "hidden";
 
     handler = (e) => {
       if(e.currentTarget === e.target) {
         popup.classList.remove('_active'); 
         popup.removeEventListener('click', handler);
+        document.querySelector('body').style.overflow = "auto";
       }
     }
     popup.addEventListener('click', handler)

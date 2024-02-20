@@ -45,25 +45,6 @@
         border: 1px solid red;
     }
 
-    // input {
-    //     padding-left: 20px;
-    //     border: 1px solid $second-color;
-    //     border-radius: 4px;
-    //     height: 45px;
-    //     font-weight: 500;
-    //     font-size: 16px;
-    //     text-align: center;
-    //     color: $main-color;
-    //     text-align: left;
-    // }
-
-    // input::placeholder {
-    //     font-size: 14px;
-    //     text-align: center;
-    //     color: $second-color;
-    //     text-align: left;
-    // };
-
     &__document {
         margin-bottom: 33px;
     }
@@ -99,6 +80,7 @@
     }
 
     &__button {
+        margin-bottom: 10px;
         width: 100%;
         padding: 13px 0 12px;
         font-size: 14px;
