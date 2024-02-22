@@ -76,15 +76,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
-
-    // i::before {
-    //     margin-right: 5px;
-    //     border: 1px solid black;
-    //     border-radius: 100%;
-    //     padding: 0.4rem;
-    //     color: $main-color;
-    // }
-
 }
 
 .menu {
@@ -313,6 +304,7 @@ input::placeholder {
 
 //popup
 .popup {
+    position: relative;
     padding: 30px;
     max-width: 360px;
     width: 100%;
@@ -320,6 +312,16 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    &__close {
+        position: absolute;
+        padding: 0 10px;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        line-height: 1;
+        cursor: pointer;
+    }
     
 
     &__title {

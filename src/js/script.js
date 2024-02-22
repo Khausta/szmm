@@ -143,7 +143,8 @@ const popup = document.querySelector('.overlay'),
       popupForm = popup.querySelector('.js-popup'),
       popupInputs = popup.querySelectorAll('.js-input'),
       popupPhone = popup.querySelector('.js-input-phone'),
-      popupEmail = popup.querySelector('.js-input-email');
+      popupEmail = popup.querySelector('.js-input-email'),
+      closePopup = popup.querySelector('.popup__close');
 const benefitsButton = document.querySelector('.benefits__button');
 const productionButtons = document.querySelectorAll('.production__button');
 
@@ -153,7 +154,7 @@ const productionButtons = document.querySelectorAll('.production__button');
     document.querySelector('body').style.overflow = "hidden";
 
     handler = (e) => {
-      if(e.currentTarget === e.target) {
+      if(e.currentTarget === e.target || e.target === closePopup) {
         popup.classList.remove('_active'); 
         popup.removeEventListener('click', handler);
         document.querySelector('body').style.overflow = "auto";
